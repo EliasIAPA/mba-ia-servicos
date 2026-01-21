@@ -262,12 +262,33 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center mb-16">Aprenda com Quem Faz</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { name: "Luiz Henrique", role: "Head de Inovação & IA", desc: "Pioneiro na implementação de IA em grandes redes de varejo e serviços.", img: "/luiz.png" },
-                { name: "Prof. Carlos Eduardo Pereira", role: "Especialista em Gestão de Serviços", desc: "Mestre em Administração com 20 anos de experiência no setor de hospitalidade.", img: "/carlos.jpg" },
-                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva.", img: "/elias.png" },
-                { name: "Larissa Ordoñez", role: "Diretora Jurídica & Compliance", desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP.", img: "/larissa.jpg" }
+                { 
+                  name: "Luiz Henrique", 
+                  role: "COORDENADOR GERAL", 
+                  desc: "Empreendedor, mentor e conselheiro com mais de 30 anos de experiência. Diretor do SEAC PR e presidente da CONFIA (Alumni FIA Business School).\n\n🛠️ Traz na bagagem:\n• Reestruturação empresarial\n• Novos negócios e expansão\n• Conselhos de administração (FIA-USP)\n• Gerenciamento de risco (University of Chicago)\n\nIdealizador do podcast “O Melhor Conselho”.", 
+                  img: "/luiz.png", 
+                  featured: true 
+                },
+                { 
+                  name: "Prof. Carlos Eduardo Pereira", 
+                  role: "Especialista em Gestão de Serviços", 
+                  desc: "Doutorando em IA pela Mackenzie. Consultor Independente de IA para Indústria, SaaS e Mercado Digital.\n\nEspecialista em Agentes de IA e Automação. Atua em projetos na Faculdade HUB (Primo Rico), FAAP e Alura.", 
+                  img: "/carlos.jpg" 
+                },
+                { 
+                  name: "Prof. Elias Evangelista", 
+                  role: "FUNDADOR & REITOR", 
+                  desc: "Possui mestrado e é Advogado, Contabilista. Atua com tecnologia, educação e mercado digital há 20 anos.\n\nNos últimos 4 anos se dedica à implantação de projetos de educação e IA para empresas.", 
+                  img: "/elias.png" 
+                },
+                { 
+                  name: "Larissa Ordoñez", 
+                  role: "Diretora Jurídica & Compliance", 
+                  desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP.", 
+                  img: "/larissa.jpg" 
+                }
               ].map((prof, i) => (
-                <div key={i} className="bg-card rounded-xl overflow-hidden border border-white/10 text-center group hover:border-neon-cyan/50 transition-all">
+                <div key={i} className={`bg-card rounded-xl overflow-hidden border text-center group transition-all ${prof.featured ? 'border-neon-cyan shadow-[0_0_30px_rgba(0,255,255,0.15)] scale-105 z-10' : 'border-white/10 hover:border-neon-cyan/50'}`}>
                   <div className="h-64 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-0 overflow-hidden relative">
                     <img src={prof.img} alt={prof.name} className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
@@ -275,7 +296,7 @@ export default function Home() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{prof.name}</h3>
                     <div className="text-neon-cyan text-sm font-bold mb-4">{prof.role}</div>
-                    <p className="text-muted-foreground text-sm">{prof.desc}</p>
+                    <p className="text-muted-foreground text-sm whitespace-pre-line text-left">{prof.desc}</p>
                   </div>
                 </div>
               ))}
