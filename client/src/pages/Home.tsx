@@ -260,11 +260,12 @@ export default function Home() {
         <section id="docentes" className="py-20 bg-secondary/20">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-16">Aprenda com Quem Faz</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { name: "Prof. Carlos Eduardo Pereira", role: "Especialista em Gestão de Serviços", desc: "Mestre em Administração com 20 anos de experiência no setor de hospitalidade." },
                 { name: "Luiz Henrique", role: "Head de Inovação & IA", desc: "Pioneiro na implementação de IA em grandes redes de varejo e serviços." },
-                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva." }
+                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva." },
+                { name: "Larissa Ordoñez", role: "Diretora Jurídica & Compliance", desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP." }
               ].map((prof, i) => (
                 <div key={i} className="bg-card rounded-xl overflow-hidden border border-white/10 text-center group">
                   <div className="h-48 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-4">
