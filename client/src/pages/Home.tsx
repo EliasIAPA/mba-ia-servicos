@@ -262,16 +262,15 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center mb-16">Aprenda com Quem Faz</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { name: "Prof. Carlos Eduardo Pereira", role: "Especialista em Gestão de Serviços", desc: "Mestre em Administração com 20 anos de experiência no setor de hospitalidade." },
-                { name: "Luiz Henrique", role: "Head de Inovação & IA", desc: "Pioneiro na implementação de IA em grandes redes de varejo e serviços." },
-                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva." },
-                { name: "Larissa Ordoñez", role: "Diretora Jurídica & Compliance", desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP." }
+                { name: "Luiz Henrique", role: "Head de Inovação & IA", desc: "Pioneiro na implementação de IA em grandes redes de varejo e serviços.", img: "/luiz.png" },
+                { name: "Prof. Carlos Eduardo Pereira", role: "Especialista em Gestão de Serviços", desc: "Mestre em Administração com 20 anos de experiência no setor de hospitalidade.", img: "/carlos.jpg" },
+                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva.", img: "/elias.png" },
+                { name: "Larissa Ordoñez", role: "Diretora Jurídica & Compliance", desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP.", img: "/larissa.jpg" }
               ].map((prof, i) => (
-                <div key={i} className="bg-card rounded-xl overflow-hidden border border-white/10 text-center group">
-                  <div className="h-48 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-4">
-                    <div className="w-32 h-32 rounded-full bg-gray-700 border-4 border-background flex items-center justify-center text-4xl text-white/20">
-                      <i className="fas fa-user"></i>
-                    </div>
+                <div key={i} className="bg-card rounded-xl overflow-hidden border border-white/10 text-center group hover:border-neon-cyan/50 transition-all">
+                  <div className="h-64 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-0 overflow-hidden relative">
+                    <img src={prof.img} alt={prof.name} className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{prof.name}</h3>
