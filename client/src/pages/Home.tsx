@@ -200,6 +200,110 @@ export default function Home() {
           </div>
         </section>
 
+        {/* RESIDÊNCIA EM SERVIÇOS - NOVA SEÇÃO */}
+        <section className="py-20 bg-background relative overflow-hidden">
+          <div className="absolute inset-0 bg-neon-purple/5 blur-[100px]"></div>
+          <div className="container relative z-10">
+            <div className="text-center mb-16">
+              <span className="text-neon-cyan font-bold tracking-wider text-sm uppercase">Exclusividade FABRANI</span>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">O Único MBA do Brasil com <span className="text-neon-purple">Residência em Serviços</span></h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">Não é apenas teoria. É imersão prática em ambientes reais de alta complexidade.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-neon-purple/10 flex items-center justify-center text-neon-purple shrink-0">
+                    <i className="fas fa-building text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Imersão Corporativa Real</h3>
+                    <p className="text-muted-foreground">Vivencie os desafios reais de grandes empresas de serviços. Aplique IA para resolver problemas de escala, atendimento e eficiência operacional in loco.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-neon-cyan/10 flex items-center justify-center text-neon-cyan shrink-0">
+                    <i className="fas fa-network-wired text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Networking de Alto Nível</h3>
+                    <p className="text-muted-foreground">Conecte-se diretamente com diretores e C-levels das empresas parceiras durante sua residência. Uma oportunidade única de visibilidade profissional.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card border border-white/10 rounded-2xl p-8 relative">
+                <div className="absolute -top-4 -right-4 bg-neon-cyan text-black font-bold px-4 py-1 rounded-full text-sm">Inédito no Brasil</div>
+                <h3 className="text-2xl font-bold mb-6">Por que a Residência Muda o Jogo?</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <i className="fas fa-check text-neon-purple"></i>
+                    <span>Aplicação imediata de metodologias ágeis</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <i className="fas fa-check text-neon-purple"></i>
+                    <span>Mentoria prática com executivos do setor</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <i className="fas fa-check text-neon-purple"></i>
+                    <span>Desenvolvimento de cases reais para seu portfólio</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <i className="fas fa-check text-neon-purple"></i>
+                    <span>Acesso a ferramentas de IA corporativas</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CERTIFICAÇÃO MODULAR - NOVA SEÇÃO */}
+        <section className="py-20 bg-secondary/20 border-y border-white/5">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Certificação Modular: <br/><span className="text-neon-cyan">Seu Ritmo, Suas Regras</span></h2>
+                <p className="text-lg text-muted-foreground mb-8">Flexibilidade total para sua carreira. Você não precisa esperar o fim do MBA para colher os frutos.</p>
+                
+                <div className="space-y-6">
+                  <div className="bg-card/50 p-6 rounded-xl border border-white/5 hover:border-neon-purple/50 transition-colors">
+                    <h4 className="text-xl font-bold text-white mb-2">Acesse Módulos Independentes</h4>
+                    <p className="text-sm text-muted-foreground">Escolha as competências que você precisa agora. Marketing, IA, Finanças ou Liderança. Estude o que importa para o seu momento.</p>
+                  </div>
+                  
+                  <div className="bg-card/50 p-6 rounded-xl border border-white/5 hover:border-neon-purple/50 transition-colors">
+                    <h4 className="text-xl font-bold text-white mb-2">Receba Certificação a Cada Etapa</h4>
+                    <p className="text-sm text-muted-foreground">Concluiu um módulo? Receba sua certificação de Extensão Universitária imediatamente. Enriqueça seu currículo passo a passo.</p>
+                  </div>
+
+                  <div className="bg-card/50 p-6 rounded-xl border border-white/5 hover:border-neon-purple/50 transition-colors">
+                    <h4 className="text-xl font-bold text-white mb-2">MBA sem Curso Superior? Sim!</h4>
+                    <p className="text-sm text-muted-foreground">Mesmo sem graduação, você pode ingressar e receber a <strong>Certificação Modular de Extensão Universitária</strong>. O conhecimento de elite está ao seu alcance.</p>
+                  </div>
+                </div>
+
+                <div className="mt-10">
+                  <Button className="bg-neon-purple hover:bg-neon-purple/80 text-white px-8 py-6 text-lg rounded-full shadow-[0_0_20px_rgba(139,92,246,0.3)]">
+                    Quero Saber Mais Sobre a Certificação Modular
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 to-neon-purple/20 blur-3xl rounded-full"></div>
+                <div className="relative bg-card border border-white/10 rounded-2xl p-8 md:p-12 text-center">
+                  <i className="fas fa-certificate text-6xl text-neon-cyan mb-6"></i>
+                  <h3 className="text-2xl font-bold mb-4">Ingresse no ÚNICO Projeto com Residência em Serviços</h3>
+                  <p className="text-muted-foreground mb-8">Uma formação híbrida que une a profundidade acadêmica com a vivência prática de uma residência médica, aplicada aos negócios.</p>
+                  <div className="inline-block bg-white/5 rounded-lg px-6 py-3 border border-white/10">
+                    <span className="text-neon-purple font-bold">Vagas Limitadas para Residência</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* MODULES */}
         <section id="grade" className="py-20 bg-secondary/20">
           <div className="container">
@@ -359,7 +463,7 @@ export default function Home() {
                 <div className="text-muted-foreground line-through text-lg mb-2">De R$ 62.100</div>
                 <div className="text-sm font-bold text-neon-cyan mb-4">POR APENAS:</div>
                 <div className="text-5xl md:text-7xl font-black text-white mb-2 tracking-tighter">
-                  R$ 8.997
+                  R$ 15.000
                 </div>
                 <div className="text-muted-foreground mb-8">ou 12x de R$ 749,75</div>
                 
