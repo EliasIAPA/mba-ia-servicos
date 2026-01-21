@@ -44,7 +44,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-8 items-center font-medium text-sm">
             <a href="#grade" className="hover:text-neon-cyan transition-colors">Grade Curricular</a>
             <a href="#diferenciais" className="hover:text-neon-cyan transition-colors">Diferenciais</a>
-            <a href="#depoimentos" className="hover:text-neon-cyan transition-colors">Depoimentos</a>
+            <a href="#docentes" className="hover:text-neon-cyan transition-colors">Docentes</a>
             <Button asChild className="bg-neon-cyan hover:bg-neon-cyan/80 text-black font-bold rounded-full px-6">
               <a href="#inscricao">Inscreva-se</a>
             </Button>
@@ -150,6 +150,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 6 AREAS OF TRANSFORMATION */}
+        <section className="py-20 bg-secondary/20">
+          <div className="container">
+            <h2 className="text-3xl md:text-5xl font-black text-center mb-16">
+              6 Áreas de <span className="text-neon-purple">Transformação Total</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { title: "Marketing", desc: "Criação de conteúdo em escala, personalização e análise preditiva de campanhas.", icon: "fa-bullhorn" },
+                { title: "Operações", desc: "Automação de processos repetitivos, gestão de estoque inteligente e logística.", icon: "fa-cogs" },
+                { title: "Customer Experience (CX)", desc: "Atendimento 24/7 com bots humanizados e análise de sentimento.", icon: "fa-heart" },
+                { title: "Finanças", desc: "Previsão de fluxo de caixa, detecção de fraudes e auditoria automatizada.", icon: "fa-chart-pie" },
+                { title: "Recursos Humanos", desc: "Recrutamento inteligente, análise de performance e retenção de talentos.", icon: "fa-users" },
+                { title: "Inteligência de Mercado", desc: "Monitoramento da concorrência em tempo real e identificação de tendências.", icon: "fa-search" }
+              ].map((area, i) => (
+                <div key={i} className="p-6 rounded-xl border border-white/10 bg-card hover:bg-white/5 transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-neon-cyan/20 flex items-center justify-center text-neon-cyan mb-4">
+                    <i className={`fas ${area.icon}`}></i>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{area.title}</h3>
+                  <p className="text-muted-foreground text-sm">{area.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* DIFFERENTIALS */}
+        <section id="diferenciais" className="py-20">
+          <div className="container">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Por Que Este MBA é Único?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { title: "100% Setorial", desc: "Focado exclusivamente nas dores e soluções do setor de serviços." },
+                { title: "Residência IA", desc: "Imersão prática para implementar projetos reais de IA." },
+                { title: "Metodologia PBL", desc: "Problem Based Learning: aprenda resolvendo problemas reais." },
+                { title: "Certificação MEC", desc: "Diploma reconhecido nacionalmente com nota máxima." }
+              ].map((diff, i) => (
+                <div key={i} className="text-center">
+                  <div className="w-16 h-16 mx-auto rounded-full border-2 border-neon-purple flex items-center justify-center text-2xl text-white mb-4">
+                    <i className="fas fa-check"></i>
+                  </div>
+                  <h3 className="font-bold text-lg mb-2">{diff.title}</h3>
+                  <p className="text-sm text-muted-foreground">{diff.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* MODULES */}
         <section id="grade" className="py-20 bg-secondary/20">
           <div className="container">
@@ -180,6 +230,99 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* EXTRA BENEFITS */}
+        <section className="py-20">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-center mb-12">Muito Mais Que Um MBA</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+              {[
+                { title: "Comunidade Exclusiva", icon: "fa-users" },
+                { title: "Templates Prontos", icon: "fa-file-alt" },
+                { title: "Mentoria Mensal", icon: "fa-chalkboard-teacher" },
+                { title: "Certificações Modulares", icon: "fa-certificate" },
+                { title: "Dashboards de Gestão", icon: "fa-chart-bar" },
+                { title: "Consultoria 1-on-1", icon: "fa-handshake" }
+              ].map((ben, i) => (
+                <div key={i} className="flex flex-col items-center text-center p-6 bg-card/30 rounded-xl border border-white/5 hover:bg-white/5 transition-colors">
+                  <i className={`fas ${ben.icon} text-3xl text-neon-pink mb-4`}></i>
+                  <h4 className="font-bold">{ben.title}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FACULTY */}
+        <section id="docentes" className="py-20 bg-secondary/20">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-center mb-16">Aprenda com Quem Faz</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { name: "Prof. Carlos Eduardo Pereira", role: "Especialista em Gestão de Serviços", desc: "Mestre em Administração com 20 anos de experiência no setor de hospitalidade." },
+                { name: "Luiz Henrique", role: "Head de Inovação & IA", desc: "Pioneiro na implementação de IA em grandes redes de varejo e serviços." },
+                { name: "Prof. Elias Evangelista", role: "Coordenador Acadêmico", desc: "Doutor em Tecnologia e referência nacional em educação disruptiva." }
+              ].map((prof, i) => (
+                <div key={i} className="bg-card rounded-xl overflow-hidden border border-white/10 text-center group">
+                  <div className="h-48 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-4">
+                    <div className="w-32 h-32 rounded-full bg-gray-700 border-4 border-background flex items-center justify-center text-4xl text-white/20">
+                      <i className="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-1">{prof.name}</h3>
+                    <div className="text-neon-cyan text-sm font-bold mb-4">{prof.role}</div>
+                    <p className="text-muted-foreground text-sm">{prof.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* TESTIMONIALS */}
+        <section id="depoimentos" className="py-20">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-center mb-12">O Que Dizem Nossos Alunos</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { name: "Mariana S.", role: "Dona de Restaurante", text: "Reduzi meu desperdício em 25% no primeiro mês aplicando o módulo de IA na cozinha." },
+                { name: "Roberto A.", role: "Gerente de Hotel", text: "A automação do check-in liberou minha equipe para focar na experiência do hóspede. Incrível." },
+                { name: "Carla M.", role: "Gestora de Facilities", text: "O dashboard preditivo de manutenção mudou completamente nossa operação. Adeus planilhas." },
+                { name: "Paulo T.", role: "Empresário", text: "O networking na comunidade vale mais que o curso. Fechei 3 parcerias na primeira semana." }
+              ].map((test, i) => (
+                <div key={i} className="p-6 bg-card border border-white/5 rounded-xl relative">
+                  <i className="fas fa-quote-left text-neon-purple/20 text-4xl absolute top-4 left-4"></i>
+                  <p className="text-muted-foreground text-sm mb-6 relative z-10 pt-6">"{test.text}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xs">
+                      {test.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm">{test.name}</div>
+                      <div className="text-xs text-neon-cyan">{test.role}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* GUARANTEE */}
+        <section className="py-16 bg-neon-cyan/5 border-y border-neon-cyan/10">
+          <div className="container flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
+            <div className="w-24 h-24 rounded-full bg-neon-cyan/20 flex items-center justify-center text-4xl text-neon-cyan">
+              <i className="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2">Garantia Incondicional de 7 Dias</h3>
+              <p className="text-muted-foreground max-w-xl">
+                Acesse todo o conteúdo, participe das aulas e entre na comunidade. Se não for o que você esperava, devolvemos 100% do seu investimento. Sem perguntas.
+              </p>
             </div>
           </div>
         </section>
@@ -217,8 +360,34 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-20 bg-secondary/20">
+          <div className="container max-w-3xl">
+            <h2 className="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+            <Accordion type="single" collapsible className="w-full">
+              {[
+                { q: "O curso é 100% online?", a: "Sim, o MBA é 100% online com aulas ao vivo e gravadas, permitindo que você estude de onde estiver." },
+                { q: "Preciso saber programar?", a: "Não! O foco é na aplicação estratégica da IA para negócios, usando ferramentas no-code e low-code." },
+                { q: "O diploma é reconhecido pelo MEC?", a: "Sim, somos uma instituição nota 5 no MEC e seu diploma de MBA tem validade nacional." },
+                { q: "Qual a duração do curso?", a: "O curso tem duração de 12 meses, com carga horária total de 360 horas." },
+                { q: "Como funciona a Residência IA?", a: "É um módulo prático onde você desenvolverá um projeto real de implementação de IA no seu setor." },
+                { q: "Tenho suporte para dúvidas?", a: "Sim, você terá acesso direto aos professores e monitores através da plataforma e comunidade." },
+                { q: "Quais as formas de pagamento?", a: "Aceitamos cartão de crédito em até 12x, boleto à vista e PIX." },
+                { q: "E se eu não gostar do curso?", a: "Você tem 7 dias de garantia incondicional para pedir seu reembolso integral." }
+              ].map((faq, i) => (
+                <AccordionItem key={i} value={`item-${i}`}>
+                  <AccordionTrigger className="text-left font-bold">{faq.q}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
         {/* FORM */}
-        <section id="inscricao" className="py-20 bg-secondary/20">
+        <section id="inscricao" className="py-20">
           <div className="container max-w-xl">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold mb-4">Garanta Sua Vaga Agora</h2>
@@ -300,14 +469,19 @@ export default function Home() {
                 <li><a href="#" className="hover:text-neon-cyan">Responsabilidade Social</a></li>
                 <li><a href="#" className="hover:text-neon-cyan">Políticas Anticorrupção</a></li>
                 <li><a href="#" className="hover:text-neon-cyan">Trabalhe Conosco</a></li>
+                <li><a href="#" className="hover:text-neon-cyan">CPA - Comissão Permanente de Avaliação</a></li>
+                <li><a href="#" className="hover:text-neon-cyan">NAP - Núcleo de Atendimento Psicopedagógico</a></li>
+                <li><a href="#" className="hover:text-neon-cyan">NDE - Núcleo Docente Estruturante</a></li>
+                <li><a href="#" className="hover:text-neon-cyan">CAT - Conselho Administração e Tecnologia</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Certificações</h4>
+              <h4 className="font-bold text-white mb-4">Atendimento</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> Reconhecido pelo MEC</li>
-                <li className="flex items-center gap-2"><i className="fas fa-shield-alt text-neon-cyan"></i> Garantia de 7 Dias</li>
-                <li className="flex items-center gap-2"><i className="fas fa-lock text-neon-cyan"></i> Pagamento Seguro</li>
+                <li className="flex items-center gap-2"><i className="far fa-clock text-neon-cyan"></i> 8:30 - 17:30 PM</li>
+                <li className="flex items-center gap-2"><i className="far fa-calendar text-neon-cyan"></i> Segunda à Sexta-feira</li>
+                <li className="mt-4 font-bold text-white">Certificações</li>
+                <li className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> Selo MEC Nota 5</li>
               </ul>
             </div>
           </div>
