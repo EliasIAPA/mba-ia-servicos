@@ -279,7 +279,7 @@ export default function Home() {
                   name: "Prof. Elias Evangelista", 
                   role: "FUNDADOR & REITOR", 
                   desc: "Possui mestrado e é Advogado, Contabilista. Atua com tecnologia, educação e mercado digital há 20 anos.\n\nNos últimos 4 anos se dedica à implantação de projetos de educação e IA para empresas.", 
-                  img: "/elias.png" 
+                  img: "/elias-new.png" 
                 },
                 { 
                   name: "Larissa Ordoñez", 
@@ -290,7 +290,7 @@ export default function Home() {
               ].map((prof, i) => (
                 <div key={i} className={`bg-card rounded-xl overflow-hidden border text-center group transition-all ${prof.featured ? 'border-neon-cyan shadow-[0_0_40px_rgba(0,255,255,0.25)] scale-110 z-20 relative ring-2 ring-neon-cyan/50' : 'border-white/10 hover:border-neon-cyan/50'}`}>
                   <div className="h-64 bg-gradient-to-b from-neon-purple/20 to-background flex items-end justify-center pb-0 overflow-hidden relative">
-                    <img src={prof.img} alt={prof.name} className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                    <img src={prof.img} alt={prof.name} className="w-full h-full object-cover object-top opacity-90 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
                   </div>
                   <div className="p-6">
