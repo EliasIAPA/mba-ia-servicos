@@ -5,8 +5,12 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    host: "0.0.0.0",
+    allowedHosts: true,
+  },
   root: path.resolve(__dirname, "client"),
-  base: "/mba-ia-servicos/",
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client/src"),

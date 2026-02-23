@@ -24,7 +24,7 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <WouterRouter base="/mba-ia-servicos">
+          <WouterRouter>
             <AppRoutes />
           </WouterRouter>
         </TooltipProvider>
