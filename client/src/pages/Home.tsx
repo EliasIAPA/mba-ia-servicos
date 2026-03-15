@@ -369,7 +369,7 @@ export default function Home() {
                 { 
                   name: "Luiz Henrique", 
                   role: "COORDENADOR GERAL", 
-                  desc: "Empreendedor, mentor e conselheiro com mais de 30 anos de experiência. Diretor do SEAC PR e presidente da CONFIA (Alumni FIA Business School).\n\n🛠️ Traz na bagagem:\n• Reestruturação empresarial\n• Novos negócios e expansão\n• Conselhos de administração (FIA-USP)\n• Gerenciamento de risco (University of Chicago)\n\nIdealizador do podcast “O Melhor Conselho”.", 
+                  desc: "Empreendedor, mentor e conselheiro com mais de 30 anos de experiência. Associado do SEAC PR e presidente da CONFIA (Alumni FIA Business School).\n\n🛠️ Traz na bagagem:\n• Reestruturação empresarial\n• Novos negócios e expansão\n• Conselhos de administração (FIA-USP)\n• Gerenciamento de risco (University of Chicago)\n\nIdealizador do podcast “O Melhor Conselho”.", 
                   img: "/luiz-new.png", 
                   featured: true 
                 },
