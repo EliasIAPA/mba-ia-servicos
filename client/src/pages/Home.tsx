@@ -387,8 +387,8 @@ export default function Home() {
                 },
                 { 
                   name: "Larissa Ordoñez", 
-                  role: "Diretora Jurídica & Compliance", 
-                  desc: "Mestre em Processo Civil, Diretora Jurídica do Grupo Kantar e Professora na PUC/COGEAE-SP.", 
+                  role: "Legal Director & DPO", 
+                  desc: "Mestre em Processo Civil pela PUC-SP, com 25 anos de experiência na área corporativa.\n\nEspecialista em Compliance e LGPD, é Professora da PUC-SP.\n\nAtualmente, é Legal Director e DPO do Grupo Kantar na América Latina.", 
                   img: "/larissa.jpg" 
                 }
               ].map((prof, i) => (
