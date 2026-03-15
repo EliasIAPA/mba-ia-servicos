@@ -72,7 +72,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-sm md:text-base font-medium animate-fade-in-up animation-delay-600">
               <div className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> 100% Prático</div>
               <div className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> 100% Setorial</div>
-              <div className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> Residência IA Garantida</div>
+              <div className="flex items-center gap-2"><i className="fas fa-check-circle text-neon-cyan"></i> Imersão IA Garantida</div>
             </div>
 
             <Button asChild size="lg" className="bg-neon-cyan hover:bg-neon-cyan/80 text-black font-bold text-lg px-8 py-6 rounded-full shadow-[0_0_20px_rgba(0,255,255,0.4)] hover:shadow-[0_0_30px_rgba(0,255,255,0.6)] transition-all animate-pulse">
@@ -184,7 +184,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { title: "100% Setorial", desc: "Focado exclusivamente nas dores e soluções do setor de serviços." },
-                { title: "Residência IA", desc: "Imersão prática para implementar projetos reais de IA." },
+                { title: "Imersão IA", desc: "Imersão prática para implementar projetos reais de IA." },
                 { title: "Metodologia PBL", desc: "Problem Based Learning: aprenda resolvendo problemas reais." },
                 { title: "Certificação MEC", desc: "Diploma reconhecido nacionalmente com nota máxima." }
               ].map((diff, i) => (
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="container relative z-10">
             <div className="text-center mb-16">
               <span className="text-neon-cyan font-bold tracking-wider text-sm uppercase">Exclusividade FABRANI</span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">O Único MBA do Brasil com <span className="text-neon-purple">Residência em Serviços</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">O Único MBA do Brasil com <span className="text-neon-purple">Imersão em Serviços</span></h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">Não é apenas teoria. É imersão prática em ambientes reais de alta complexidade.</p>
             </div>
 
@@ -233,7 +233,7 @@ export default function Home() {
               </div>
               <div className="bg-card border border-white/10 rounded-2xl p-8 relative">
                 <div className="absolute -top-4 -right-4 bg-neon-cyan text-black font-bold px-4 py-1 rounded-full text-sm">Inédito no Brasil</div>
-                <h3 className="text-2xl font-bold mb-6">Por que a Residência Muda o Jogo?</h3>
+                <h3 className="text-2xl font-bold mb-6">Por que a Imersão Muda o Jogo?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <i className="fas fa-check text-neon-purple"></i>
@@ -293,10 +293,10 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 to-neon-purple/20 blur-3xl rounded-full"></div>
                 <div className="relative bg-card border border-white/10 rounded-2xl p-8 md:p-12 text-center">
                   <i className="fas fa-certificate text-6xl text-neon-cyan mb-6"></i>
-                  <h3 className="text-2xl font-bold mb-4">Ingresse no ÚNICO Projeto com Residência em Serviços</h3>
+                  <h3 className="text-2xl font-bold mb-4">Ingresse no ÚNICO Projeto com Imersão em Serviços</h3>
                   <p className="text-muted-foreground mb-8">Uma formação híbrida que une a profundidade acadêmica com a vivência prática de uma residência médica, aplicada aos negócios.</p>
                   <div className="inline-block bg-white/5 rounded-lg px-6 py-3 border border-white/10">
-                    <span className="text-neon-purple font-bold">Vagas Limitadas para Residência</span>
+                    <span className="text-neon-purple font-bold">Vagas Limitadas para Imersão</span>
                   </div>
                 </div>
               </div>
@@ -308,7 +308,7 @@ export default function Home() {
         <section id="grade" className="py-20 bg-secondary/20">
           <div className="container">
             <h2 className="text-3xl md:text-5xl font-black text-center mb-16">
-              6 Módulos Estratégicos + <span className="text-neon-purple">Residência Setorial</span>
+              6 Módulos Estratégicos + <span className="text-neon-purple">Imersão Setorial</span>
             </h2>
             
             <div className="space-y-6 max-w-4xl mx-auto">
@@ -495,7 +495,7 @@ export default function Home() {
                 { q: "Preciso saber programar?", a: "Não! O foco é na aplicação estratégica da IA para negócios, usando ferramentas no-code e low-code." },
                 { q: "O diploma é reconhecido pelo MEC?", a: "Sim, somos uma instituição nota 5 no MEC e seu diploma de MBA tem validade nacional." },
                 { q: "Qual a duração do curso?", a: "O curso tem duração de 12 meses, com carga horária total de 360 horas." },
-                { q: "Como funciona a Residência IA?", a: "É um módulo prático onde você desenvolverá um projeto real de implementação de IA no seu setor." },
+                { q: "Como funciona a Imersão IA?", a: "É um módulo prático onde você desenvolverá um projeto real de implementação de IA no seu setor." },
                 { q: "Tenho suporte para dúvidas?", a: "Sim, você terá acesso direto aos professores e monitores através da plataforma e comunidade." },
                 { q: "Quais as formas de pagamento?", a: "Aceitamos cartão de crédito em até 12x, boleto à vista e PIX." },
                 { q: "E se eu não gostar do curso?", a: "Você tem 7 dias de garantia incondicional para pedir seu reembolso integral." }
