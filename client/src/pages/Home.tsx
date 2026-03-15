@@ -200,7 +200,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* RESIDÊNCIA EM SERVIÇOS - NOVA SEÇÃO */}
+        {/* IMERSÃO EM SERVIÇOS - NOVA SEÇÃO */}
         <section className="py-20 bg-background relative overflow-hidden">
           <div className="absolute inset-0 bg-neon-purple/5 blur-[100px]"></div>
           <div className="container relative z-10">
@@ -317,8 +317,8 @@ export default function Home() {
                 { title: "Módulo 2: Fundamentos de IA", hours: "60h", content: "GPT-4, Claude, Engenharia de Prompt, Machine Learning para Executivos." },
                 { title: "Módulo 3: IA Aplicada a Negócios", hours: "60h", content: "Marketing, Vendas, RH, Operações e Finanças com IA." },
                 { title: "Módulo 4: Estratégia e Governança", hours: "60h", content: "Transformação Digital, Liderança na Era da IA, LGPD e Ética." },
-                { title: "Módulo 5: RESIDÊNCIA IA - TRILHA SETORIAL", hours: "60h", content: "Projetos práticos em Bares/Restaurantes, Turismo/Hotelaria ou Facilities." },
-                { title: "Módulo 6: RESIDÊNCIA IA - PROJETO FINAL", hours: "60h", content: "Implementação real de um projeto de IA no seu negócio." }
+                { title: "Módulo 5: IMERSÃO IA - TRILHA SETORIAL", hours: "60h", content: "Projetos práticos em Bares/Restaurantes, Turismo/Hotelaria ou Facilities." },
+                { title: "Módulo 6: IMERSÃO IA - PROJETO FINAL", hours: "60h", content: "Implementação real de um projeto de IA no seu negócio." }
               ].map((mod, i) => (
                 <div key={i} className="group relative bg-card border border-white/5 rounded-xl overflow-hidden hover:border-neon-cyan/50 transition-all">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-neon-purple group-hover:bg-neon-cyan transition-colors"></div>
